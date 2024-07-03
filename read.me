@@ -1,0 +1,20 @@
+import React, { useState } from 'react';
+
+function Trocar() {
+    const [Trocar, setTroca] = useState('Oi!');
+
+    const aoclick = () => {
+        if (Trocar === 'Oi!') {
+            setTroca('Tchau!');
+        } else {
+            setTroca('Oi!');
+        };
+
+        return (
+            <div>
+                <p>Trocar texto:{Trocar}</p>
+            </div>
+        );
+    }
+}
+    export default Trocar;
